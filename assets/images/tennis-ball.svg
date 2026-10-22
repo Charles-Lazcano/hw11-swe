@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="title desc">
+  <title id="title">Tennis Ball Icon</title>
+  <desc id="desc">A simple illustration of a tennis ball, representing a hobby.</desc>
+  <circle cx="100" cy="100" r="95" fill="#d4f04a" stroke="#3a3a3a" stroke-width="4"/>
+  <path d="M 15 55 Q 100 100 15 145" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <path d="M 185 55 Q 100 100 185 145" fill="none" stroke="#ffffff" stroke-width="6"/>
+</svg>

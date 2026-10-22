@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="JavaScript test page for Charles Lazcano's homepage.">
+	<title>JS Test | Charles Lazcano's homepage</title>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/global-header.css">
+	<link rel="stylesheet" href="./assets/css/global-footer.css">
+	<link rel="stylesheet" href="./assets/css/accesibility.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="stylesheet" href="./assets/css/site.css">
+	<link rel="shortcut icon" href="./assets/img/favicon.webp" type="image/x-icon">
+</head>
+<body class="scroll-bar">
+	<div id="loader">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+			<path fill="#d4af37" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+				<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="360 50 50" repeatCount="indefinite" />
+			</path>
+		</svg>
+	</div>
+	<header>
+		<div class="header-container">
+			<nav class="header-nav-bar">
+				<div class="header-nav-logo">
+					<a class="header-logo-link" href="index.html">Charles <span>Lazcano</span></a>
+				</div>
+				<ul class="header-nav-lists">
+					<li class="header-nav-list"><a class="header-nav-link" href="index.html">Home</a></li>
+					<li class="header-nav-list"><a class="header-nav-link" href="school.html">School</a></li>
+					<li class="header-nav-list"><a class="header-nav-link" href="hobbies.html">Hobbies</a></li>
+					<li class="header-nav-list"><a class="header-nav-link" href="work.html">Work</a></li>
+					<li class="header-nav-list"><a class="header-nav-link" href="skills.html">Skills</a></li>
+					<li class="header-nav-list"><a class="header-btn header-btn-custom" href="contact.html">CONTACT</a></li>
+				</ul>
+				<div class="header-hamburger-icon">
+					<div class="header-hamburger-line-1"></div>
+					<div class="header-hamburger-line-2"></div>
+					<div class="header-hamburger-line-3"></div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="page-hero">
+			<h1 class="page-hero-title">JS Test</h1>
+			<hr class="horizontal">
+			<p class="page-hero-subtitle">My first JavaScript page</p>
+		</div>
+
+		<section class="content-container">
+			<h2 class="section-title">Greeting</h2>
+			<p id="greeting"></p>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<nav class="footer-nav">
+				<div class="footer-description">
+					<h3 class="footer-description-title">Charles Lazcano</h3>
+					<p>Computer Science Student &mdash; uft746</p>
+				</div>
+				<div class="footer-contact-us">
+					<h3 class="footer-description-title">Contact</h3>
+					<p class="footer-description-detail">
+						<img src="./assets/img/mail.svg" class="footer-description-icon" alt="">
+						<span>Contact information coming soon!</span>
+					</p>
+					<p class="footer-description-detail">
+						<img src="./assets/img/map-pin.svg" class="footer-description-icon" alt="">
+						<span><a class="footer-inline-link" href="contact.html">Visit the Contact page</a></span>
+					</p>
+				</div>
+				<div class="footer-follow-us">
+					<h3 class="footer-description-title">Explore</h3>
+					<ul class="footer-links">
+						<li><a href="school.html">School</a></li>
+						<li><a href="hobbies.html">Hobbies</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="skills.html">Skills</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<p class="footer-bottom">&copy; 2026 Charles Lazcano &mdash; uft746 &middot; Tennis photos from <a class="footer-inline-link" href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> (CC0)</p>
+	</footer>
+	<script>
+		(() => {
+			const loader = document.getElementById('loader');
+			const scrollBar = document.getElementsByClassName('scroll-bar')[0];
+			window.addEventListener('load', () => {
+				loader.classList.add('none');
+				scrollBar.classList.remove('scroll-bar');
+			});
+		})();
+	</script>
+	<script defer src="assets/js/toggleHamburger.js"></script>
+	<script src="assets/js/jstest.js"></script>
+</body>
+</html>

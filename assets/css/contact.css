@@ -1,0 +1,71 @@
+/* Bootstrap 3 sets html to 10px; restore 16px so the site's rem sizes stay correct */
+html {
+	font-size: 16px;
+}
+
+.contact-form {
+	max-width: 520px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.contact-form .control-label {
+	font-size: 1rem;
+}
+
+.contact-form .form-control {
+	font-size: 1rem;
+	height: auto;
+	padding: 10px 40px 10px 12px;
+}
+
+/* Keep the feedback glyph lined up with the taller inputs */
+.contact-form .form-control-feedback {
+	top: 32px;
+	right: 4px;
+}
+
+.contact-form textarea + .form-control-feedback {
+	top: 34px;
+}
+
+/* A completed step: locked in with Bootstrap's success colors */
+.contact-form .has-success .form-control[disabled] {
+	background-color: #f4faf2;
+	cursor: not-allowed;
+}
+
+.wizard-status {
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.contact-form .progress {
+	height: 10px;
+	margin-bottom: 24px;
+}
+
+.contact-form .progress-bar {
+	transition: width 0.3s ease;
+}
+
+/* Fade each step in as the wizard reveals it */
+.wizard-step {
+	animation: step-in 0.3s ease;
+}
+
+@keyframes step-in {
+	from {
+		opacity: 0;
+		transform: translateY(-6px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Theme gold for the progress bar */
+.contact-form .progress-bar {
+	background-color: #d4af37;
+}
